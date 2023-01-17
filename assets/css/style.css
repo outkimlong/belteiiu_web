@@ -25,6 +25,8 @@
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
+    --bigg-meduim-font-size: 1.75rem;
+    --big-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --h4-font-size: 1rem;
@@ -252,7 +254,7 @@ body.dark-theme {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
 }
 
-/* tTable */
+/* Table */
 table {
     font-family: Poppins, 'Battambang';
     border-collapse: collapse;
@@ -267,6 +269,9 @@ table {
 
 thead{
     background-color: #0181CA;
+}
+th, td{
+    border: 1px solid #ddd;
 }
   
 th {
@@ -302,9 +307,10 @@ tr:nth-child(even) {
 }
 
 .home_title{
-    font-size: var(--biggest-font-size);
+    font-size: var(--bigg-meduim-font-size);
     font-weight: var(--font-bold);
     margin-bottom: var(--mb-0-75);
+    color: #0A96A4;
 }
 
 .home_description{
@@ -353,12 +359,12 @@ tr:nth-child(even) {
 }
 
 
-/* About */
-.about_container{
+/* Intensive */
+.intensive_container{
     align-items: center;
     gap: 2.5rem;
 }
-.about_data{
+.intensive_data{
     text-align: center;
 }
 .main-point{
@@ -366,23 +372,23 @@ tr:nth-child(even) {
     font-size: var(--h3-font-size);
 }
 
-/* Security */
-.security_container{
+/* Pedagogy */
+.pedagogy_container{
     gap: 2.5rem;
 }
-.security_description{
+.pedagogy_description{
     text-align: left;
 }
 
 /* Services */
-.services_container{
+.image_container{
     padding-top: 1rem;
 }
 
-.services_data{
+.imgage_data{
     width: 100%;
 }
-.services_img{
+.set_img{
     width: 100%;
     box-shadow: 0 2px 6px hsl(var(--hue), 100%, 15%, 0.15);
     /* padding: 2rem 1.5rem; */
@@ -538,9 +544,7 @@ tr:nth-child(even) {
 
 /* Footer */
 .footer{
-    /* background-color: var(--first-color-lighten); */
     background-color: var(--beltei-color);
-    /* padding-bottom: 2rem; */
 }
 .footer_container{
     row-gap: 2rem;
@@ -573,7 +577,6 @@ tr:nth-child(even) {
     color: var(--title-color);
 } 
 .footer_copy{
-    /* margin-top: 6rem; */
     padding: 20px;
     text-align: center;
     font-size: var(--small-font-size);
@@ -583,7 +586,6 @@ tr:nth-child(even) {
 /* Scrollup */
 .scrollup{
     position: fixed;
-    /* background-color: var(--first-color); */
     background-color: #1E6090;
     right: 1rem;
     bottom: -20%;
@@ -600,7 +602,6 @@ tr:nth-child(even) {
 }
 .scrollup_icon{
     font-size: 1.25rem;
-    /* color: var(--title-color); */
     color: white;
 }
 
@@ -630,15 +631,102 @@ tr:nth-child(even) {
         width: 100%;
     }
     .section{
-        padding: 3.5rem 0 1rem;
+        padding: 1.5rem 0 1rem;
     }
-    .services_img{
+    .set_img{
         width: 100px;
     }
     .app_buttons{
         grid-template-columns: max-content;
     }
+    .nav_logo img{
+        width: 20px;
+        height: auto;
+    }
+    .home_title, .year{
+        font-size: var(--h2-font-size);
+    }
+
+    .intensive_description, .main-point{
+        text-align: left;
+    }
+    .home_container{
+        row-gap: 1rem;
+    }
+    .section_title-center{
+        font-size: var(--h3-font-size);
+    }
+    .main-point{
+        font-size: var(--normal-font-size);
+    }
+    #subject_table th{
+        font-size: 11px;
+        padding: 3px;
+        font-weight: 600;
+    }
+    #subject_table  td{
+        text-align: left;
+        font-size: 11px;
+        padding: 3px 3px;
+    }
+    .image_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .set_img{
+        width: 100%;
+    }
+    #course_table .desc_course{
+        text-align: left;
+    }
+    td{
+        font-size: 12px;
+    }
+    .title_img{
+        width: 55px;
+    }
+    .title_header strong{
+        font-size: 13px;
+      }
+    #collab th, td{
+        border: 0;
+    }
+    th, td{
+        border: 1px solid #ddd;
+    }
+    .footer_copy{
+        padding: 10px;
+    }
+    
+    .desc_course{
+        text-align: left;
+    }
 }
+
+@media screen and (min-width: 361px) {
+    .section{
+        padding: 1rem 0 1rem;
+    }
+    .main-point, .intensive_description{
+        text-align: left;
+    }
+    #subject_table th{
+        font-size: 12px;
+        padding: 3px;
+        font-weight: 600;
+    }
+    #subject_table  td{
+        text-align: left;
+        font-size: 12px;
+        padding: 4px 4px;
+    }
+    .footer_copy{
+        padding: 10px;
+    }
+    .desc_course{
+        text-align: left;
+    }
+}
+
 
 @media screen and (min-width: 567px) {
     .svg_img{
@@ -648,26 +736,26 @@ tr:nth-child(even) {
         text-align: initial;
     }
     .home_container,
-    .about_container,
-    .security_container,
-    .services_container,
+    .intensive_container,
+    .pedagogy_container,
+    .image_container,
     .app_container,
     .contact_container,
     .footer_container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .home_img{
-        order: 1;
+    .home_data{
+        order: -1;
     }
     .home_container,
-    .about_container,
-    .security_container,
+    .intensive_container,
+    .pedagogy_container,
     .app_container,
     .contact_container{
         align-items: center;
     }
-    .about_data,
-    .security_data,
+    .intensive_data,
+    .pedagogy_data,
     .app_data,
     .contact_descrition{
         text-align: initial;
@@ -675,6 +763,16 @@ tr:nth-child(even) {
     .about_img,
     .app_img{
         order: -1;
+    }
+    #subject_table th{
+        font-size: 14px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    #subject_table  td{
+        text-align: left;
+        font-size: 14px;
+        padding: 10px 3px;
     }
 }
 
@@ -699,14 +797,43 @@ tr:nth-child(even) {
         position: initial;
     }
     .home_container{
-        padding: 6rem 0 2rem;
+        padding: 2rem 0 2rem;
     }
     .app_buttons{
         justify-content: initial;
     }
+    .nav_link{
+        font-size: 12px;
+        font-weight: var(--font-semi-bold);
+    }
+    .nav_logo span{
+        display: none;
+    }
+    .nav_logo img{
+        width: 30px;
+        margin-right: 7px; 
+    }
+    .home_title{
+        font-size: var(--h2-font-size);
+    }
+    .desc_course{
+        text-align: left;
+    }
+    #subject_table th{
+        font-size: 14px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    #subject_table  td{
+        text-align: left;
+        font-size: 14px;
+        padding: 10px 3px;
+    }
+
 }
 
 /* large Device */
+
 @media screen and (min-width: 968px) {
     .button_header{
         display: block;
@@ -714,16 +841,16 @@ tr:nth-child(even) {
     .svg_img{
         width: 470px;
     }
-    .about_container,
-    .security_container,
+    .intensive_container,
+    .pedagogy_container,
     .app_container,
     .contact_container{
         column-gap: 6rem;
     }
-    .services_container{
+    .image_container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .services_data img{
+    .imgage_data img{
         width: 100%;
     }
 
@@ -738,6 +865,13 @@ tr:nth-child(even) {
     }
     .footer_link{
         align-items: 1.45rem;
+    }
+    .nav_link{
+        font-size: var(--h4-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+    .nav_logo span{
+        display: flex;
     }
 }
 
