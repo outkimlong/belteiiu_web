@@ -1,104 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>BELTEI IU</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-        <link rel="shortcut icon" href="/assets/img/logo/biu_logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="../app.html" class="nav_logo"><img src="/assets/img/logo/biu_logo.png" alt=""><span>BETEI IU</span></a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
-                        <li class="nav_item">
-                            <a href="../app.html" class="nav_link">Home</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="./intensive.html" class="nav_link">Intensive course</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="./pedagogy.html" class="nav_link">Pedagogy</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="./about.html" class="nav_link">About</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="./collaboration.html" class="nav_link">Collaboration</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="./dormitory.html" class="nav_link active-link">Dormitory</a>
-                        </li>
 
-                        <i class='bx bx-toggle-left change-theme' id="theme-button" ></i>
-                    </ul>
-                </div>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="pedagogy section container" id="dormitory">
-                <div class="pedagogy_container">
-                    <div class="pedagogy_data">
-                        <h2 class="section_title-center">“Welcome to Beautiful BELTEI Dormitory”</h2>
-                        <p class="pedagogy_description">For the convenience of provincial and international students, BELTEI International University has constructed a luxurious 7-story dormitory building with 65 rooms of 130 beds capacity, a cafeteria, student lounge and syndicate rooms for student group discussion. Each bedroom contains a bathroom, kitchen and study table. We are ready to welcome national and international students for a comfortable stay with an affordable price. This dormitory will start to operate from January 1, 2022.</p>
-                        <div class="image_container grid">
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_12.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_1.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_2.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_3.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_4.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_5.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_6.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_7.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_8.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_9.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_10.jpg" class="svg_color set_img" alt="">
-                            </div>
-                            <div class="image_data">
-                                <img src="/assets/img/campus_2/dormitory/dormitory_11.jpg" class="svg_color set_img" alt="">
-                            </div>
+<head>
+    <title>BELTEI IU</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="shortcut icon" href="/assets/img/logo/biu_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/app.html" class="nav_logo"><img src="/assets/img/logo/biu_logo.png" alt=""><span>BETEI
+                    IU</span></a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="/app.html" class="nav_link">Home</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Intensive course
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./intensive/english_intensive.html">English Intensive Course</a>
+                            <a href="./intensive/computer_intensive.html">Computer Intensive Course</a>
+                            <a href="./intensive/tuition_fees.html">Tuition Fees</a>
                         </div>
                     </div>
-
-                
+                    <li class="nav_item">
+                        <a href="./pedagogy.html" class="nav_link">Pedagogy</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">About
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./about/about.html">BELTEI History</a>
+                            <a href="./about/campus_1.html">BELTEI IU Campus 1</a>
+                            <a href="./about/campus_2.html">BELTEI IU Campus 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Collaboration
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./collaboration/nation_collaboration.html">National Collaboration</a>
+                            <a href="./collaboration/inter_collaboration.html">International Collaboration</a>
+                        </div>
+                    </div>
+                    <li class="nav_item">
+                        <a href="./dormitory.html" class="nav_link active-link">Dormitory</a>
+                    </li>
+                    <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="pedagogy section container" id="dormitory">
+            <div class="pedagogy_container">
+                <div class="pedagogy_data">
+                    <h2 class="section_title-center" id="dorm">សូមស្វាគមន៍មកកាន់ ប៊ែលធី អន្តេវាសិកដ្ឋានដ៏ស្រស់ស្អាត</h2>
+                    <p class="pedagogy_description" id="dorm_desc">ដើម្បីភាពងាយស្រួលដល់និស្សិតតាមខេត្ត និងអន្តរជាតិ
+                        សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ បានសាងសង់អគារអន្តេវាសិកដ្ឋាន
+                        7 ជាន់ដ៏ប្រណិត ដែលមាន 65 បន្ទប់ ចំណុះ 130 គ្រែ អាហារដ្ឋាន កន្លែងទទួលសិស្ស
+                        និងបន្ទប់ប្រជុំសម្រាប់ពិភាក្សាជាក្រុម។ បន្ទប់គេងនីមួយៗមានបន្ទប់ទឹក ផ្ទះបាយ និងតុសិក្សា។
+                        យើងត្រៀមស្វាគមន៍និស្សិតជាតិ និងអន្តរជាតិ សម្រាប់ការស្នាក់នៅប្រកបដោយផាសុកភាព ជាមួយនឹងតម្លៃសមរម្យ។
+                        អន្តេវាសិកដ្ឋាននេះនឹងចាប់ផ្តើមដំណើរការចាប់ពីថ្ងៃទី 1 ខែមករា ឆ្នាំ 2022។</p>
+                    <div class="image_container grid">
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_12.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_1.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_2.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_3.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_4.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_5.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_6.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_7.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_8.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_9.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_10.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                        <div class="image_data">
+                            <img src="../assets/img/about_beltei/campus_2/dormitory/dormitory_11.jpg"
+                                class="svg_color set_img" alt="">
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer_copy">&#169; IT OFFICE. All right reserved</p>
-        </footer>
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-up-arrow-alt scrollup_icon'></i>
-        </a>
-        <script src="../assets/js/main.js"></script>
-    </body>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer_copy">&#169; IT OFFICE. All right reserved</p>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup_icon'></i>
+    </a>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        var dataReload = document.querySelectorAll("[data-reload]");
+        var language = {
+            en: {
+                js_dorm: "Welcome to Beautiful BELTEI Dormitory",
+                js_dorm_desc: "For the convenience of provincial and international students, BELTEI International University has constructed a luxurious 7-story dormitory building with 65 rooms of 130 beds capacity, a cafeteria, student lounge and syndicate rooms for student group discussion. Each bedroom contains a bathroom, kitchen and study table. We are ready to welcome national and international students for a comfortable stay with an affordable price. This dormitory will start to operate from January 1, 2022.",
+            },
+            kh: {
+                js_dorm: "សូមស្វាគមន៍មកកាន់ ប៊ែលធី អន្តេវាសិកដ្ឋានដ៏ស្រស់ស្អាត",
+                js_dorm_desc: "ដើម្បីភាពងាយស្រួលដល់និស្សិតតាមខេត្ត និងអន្តរជាតិ សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ បានសាងសង់អគារអន្តេវាសិកដ្ឋាន 7 ជាន់ដ៏ប្រណិត ដែលមាន 65 បន្ទប់ ចំណុះ 130 គ្រែ អាហារដ្ឋាន កន្លែងទទួលសិស្ស និងបន្ទប់ប្រជុំសម្រាប់ពិភាក្សាជាក្រុម។ បន្ទប់គេងនីមួយៗមានបន្ទប់ទឹក ផ្ទះបាយ និងតុសិក្សា។ យើងត្រៀមស្វាគមន៍និស្សិតជាតិ និងអន្តរជាតិ សម្រាប់ការស្នាក់នៅប្រកបដោយផាសុកភាព ជាមួយនឹងតម្លៃសមរម្យ។ អន្តេវាសិកដ្ឋាននេះនឹងចាប់ផ្តើមដំណើរការចាប់ពីថ្ងៃទី 1 ខែមករា ឆ្នាំ 2022។",
+
+            }
+        };
+        if (window.location.hash) {
+            if (window.location.hash === "#kh") {
+                dorm.textContent = language.kh.js_dorm;
+                dorm_desc.textContent = language.kh.js_dorm_desc;
+
+            } else {
+                dorm.textContent = language.en.js_dorm;
+                dorm_desc.textContent = language.en.js_dorm_desc;
+
+            }
+        }
+        for (i = 0; i <= dataReload.length; i++) {
+            dataReload[i].onclick = function () {
+                location.reload(true);
+            }
+        }
+    </script>
+</body>
+
 </html>

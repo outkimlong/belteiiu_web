@@ -1,3 +1,7 @@
+// import {greet, message} from "./lang.js";
+
+
+
 // Show Menu
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
@@ -116,28 +120,42 @@ const acc_btns = document.querySelectorAll(".accordion-header");
     }
   };
 
-
+// import {greet, message} from "./lang.js";
 // change language
-{/* <script>
-var dataReload = document.querySelectorAll("[data-reload]");
-var language = {
-  en :{
-      hello: "New Academic Year 2022-2023"
-  },
-  kh: {
-      hello: "ឆ្នាំសិក្សាថ្មី 2022-2023"
-  }
-};
-if(window.location.hash) {
-  if(window.location.hash === "#kh") {
-      hi.textContent = language.kh.hello;
-  }
-}
-for (i =0; i <= dataReload.length; i++) {
-  dataReload[i].onclick = function() {
-      location.reload(true);
-  }
-
-</script>  */}
 
 
+
+// function changeLanguage(lang) {
+// 	location.hash = lang;
+// 	location.reload();
+// 	}
+
+// 	// Define the language reload anchors
+// 	var language = {
+// 	eng: {
+// 		welcome: "New Academic Year 2022-2023"
+// 	},
+// 	es: {
+// 		welcome: "ឆ្នាំសិក្សាថ្មី 2022-2023"
+// 	},
+// 	hin: {
+// 		welcome: "GeeksforGeeks पोर्टल पर आपका स्वागत है! " +
+// 		"आप ऊपर दिए गए बटन का उपयोग करके किसी भी " +
+// 		"भाषा को चुन सकते हैं!"
+// 	}
+// 	};
+
+// 	// Check if a hash value exists in the URL
+// 	if (window.location.hash) {
+
+// 	// Set the content of the webpage
+// 	// depending on the hash value
+// 	if (window.location.hash == "#es") {
+// 		siteContent.textContent =
+// 		language.es.welcome;
+// 	}
+// 	else if (window.location.hash == "#hin") {
+// 		siteContent.textContent =
+// 		language.hin.welcome;
+// 	}
+// 	}
