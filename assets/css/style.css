@@ -1,5 +1,6 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Poppins&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -23,7 +24,8 @@
     --scroll-bar-color: hsl(var(--hue), 4%, 85%);
     --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: Poppins, 'Battambang';
+    /* --body-font: 'Poppins', sans-serif; */
     --biggest-font-size: 2rem;
     --bigg-meduim-font-size: 1.75rem;
     --big-font-size: 1.5rem;
@@ -191,6 +193,9 @@ tr {
     align-items: center;
 }
 
+
+
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -228,6 +233,7 @@ tr {
     float: none;
     color: black;
     padding: 12px 16px;
+    font-family: Battambang, 'Poppins';
     text-decoration: none;
     display: block;
     text-align: left;
@@ -773,6 +779,10 @@ table {
     background-color: var(--text-color-light);
 }
 
+.dropdown-content a{
+    font-family: 'Poppins';
+}
+
 /* Media Queries */
 /* Small Device */
 @media screen and (max-width: 360px) {
@@ -921,6 +931,9 @@ table {
     .btn_nation {
         display: none;
     }
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
+    }
 }
 
 @media screen and (min-width: 361px) {
@@ -1000,6 +1013,9 @@ table {
     .btn_nation {
         display: none;
     }
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
+    }
 
 }
 
@@ -1056,6 +1072,9 @@ table {
         text-align: left;
         font-size: 14px;
         padding: 10px 3px;
+    }
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
     }
 }
 
@@ -1138,6 +1157,9 @@ table {
     .coll_img img {
         width: 110px;
     }
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
+    }
 
 }
 
@@ -1189,6 +1211,9 @@ table {
 
     .nav_logo span {
         display: flex;
+    }
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
     }
 }
 
@@ -1260,23 +1285,8 @@ table {
     .btn_nation {
         display: none;
     }
-}
-
-.acc {
-    width: 100%;
-    background-color: #0A96A4;
-    height: 150px;
-    display: flex;
-}
-
-.acc img {
-    width: 200px;
-    border-radius: 20px;
-    height: auto;
-    padding: 10px 10px;
-    align-self: center;
-}
-
-.acc_title {
-    align-self: center;
+    .nav_item, .nav_link{
+        font-family: 'Poppins';
+    }
+    
 }
