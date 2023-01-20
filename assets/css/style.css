@@ -233,7 +233,7 @@ tr {
     float: none;
     color: black;
     padding: 12px 16px;
-    font-family: Battambang, 'Poppins';
+    font-family: Poppins, 'Battambang';
     text-decoration: none;
     display: block;
     text-align: left;
@@ -780,7 +780,10 @@ table {
 }
 
 .dropdown-content a{
-    font-family: 'Poppins';
+    font-family: Poppins, 'Battambang';
+}
+.nav_item, .nav_link{
+    font-family: Poppins, 'Battambang';
 }
 
 /* Media Queries */
@@ -894,7 +897,7 @@ table {
     }
 
     .title_header strong {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .accordion-header i {
@@ -925,14 +928,18 @@ table {
     }
 
     .accordion-header-nation strong {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .btn_nation {
         display: none;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
 }
 
@@ -977,7 +984,7 @@ table {
     }
 
     .title_header strong {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .accordion-header i {
@@ -1007,14 +1014,18 @@ table {
     }
 
     .accordion-header-nation strong {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .btn_nation {
         display: none;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
 
 }
@@ -1074,7 +1085,14 @@ table {
         padding: 10px 3px;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .nav_item, .nav_link{
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
 }
 
@@ -1158,7 +1176,11 @@ table {
         width: 110px;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
 
 }
@@ -1213,7 +1235,11 @@ table {
         display: flex;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
 }
 
@@ -1250,7 +1276,7 @@ table {
     }
 
     .title_header strong {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .accordion-header i {
@@ -1279,14 +1305,18 @@ table {
     }
 
     .accordion-header-nation strong {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .btn_nation {
         display: none;
     }
     .nav_item, .nav_link{
-        font-family: 'Poppins';
+        font-family: Poppins, 'Battambang';
+    }
+    .dropdown .dropbtn{
+        font-family: Poppins, 'Battambang';
+        font-size: var(--normal-font-size);
     }
     
 }
